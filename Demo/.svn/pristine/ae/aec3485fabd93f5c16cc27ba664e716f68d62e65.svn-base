@@ -1,0 +1,62 @@
+package com.yhj;
+
+/** 
+ * @ClassName: Demo03.java
+ * @Description: 
+ * @author: yhg
+ * @date: 2017年12月20日
+ */
+public class Demo07 {
+
+	public static void main(String[] args) {
+		//水仙花数
+		for(int i=100;i<=999;i++){
+			// 求出百位数
+			int b=i/100;
+			// 求出十位数
+			int s=(i-b*100)/10;
+			// 求出个位数
+			int g=i-b*100-s*10;
+			if(i==g*g*g+s*s*s+b*b*b){
+				System.out.println(i+" ");
+			}
+
+		}
+		//九九乘法
+		for(int i=1;i<=9;i++){
+			for(int j=1;j<=i;j++){
+				System.out.print(j+"*"+i+"="+i*j+" ");
+			}
+			System.out.println();
+		}
+
+		//阶乘int total=0;
+		int total=0;
+		for(int i=1;i<=10;i++){
+			int cTotal=1;
+			for(int j=1;j<=i;j++){
+				cTotal*=j;
+			}
+			total+=cTotal;
+			System.out.println(i+"!="+cTotal);
+		}
+		System.out.println("1!+2!+3!+...+10!的阶乘和是："+total);
+	    //菱形
+		for(int i=1;i<=5;i++){
+	    	for(int a=1;a<=5-i;a++)
+	    		System.out.print(" ");
+	    	for(int c=1;c<=i*2-1;c++){
+	    		System.out.print("*");
+	    	}
+	    	System.out.println();
+	    	}
+		for(int i=1;i<=4;i++){
+	    	for(int a=1;a<=i;a++)
+	    		System.out.print(" ");
+	    	for(int c=1;c<=9-i*2;c++){
+	    		System.out.print("*");
+	    	}
+	    	System.out.println();
+	    	}
+	}
+}
