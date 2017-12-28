@@ -1,0 +1,25 @@
+package com.yhj.Demo02;
+
+ /** 
+  * @ClassName: Demo20.java
+  * @Description: 
+  * @author: yhg
+  * @date: 2017年12月27日
+ */
+public class Demo20 {
+   private int a=20;
+   //内部类
+    class set{
+    	public void asd() {
+    		System.out.println(a);
+    	}
+    }
+    public void asd(){
+    	set a=new set();
+    	a.asd();
+    }
+   public static void main(String[] args) {
+		 Demo20 d=new Demo20();
+		 d.asd();
+	}
+}
