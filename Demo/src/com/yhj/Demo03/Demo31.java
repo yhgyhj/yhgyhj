@@ -6,6 +6,7 @@ package com.yhj.Demo03;
   * @author: yhg
   * @date: 2017年12月29日
  */
+//instanceof判断这个子类是否属于这个父类
 public class Demo31 {
 	public static void sta(Demo3102 demo3102 ) {
 		demo3102.asd();
